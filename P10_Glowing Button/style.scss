@@ -1,0 +1,89 @@
+$react:rgb(20, 121, 189);
+$angular:rgb(212, 58, 58);
+$vue:rgb(41, 187, 97);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #2e2f33;
+}
+
+a{
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight:400;
+    padding: 10px 30px;
+    transition: 0.5s;
+
+    &:hover
+    {
+        letter-spacing: 0.25em;
+        color: var(--clr);
+        background: var(--clr);
+       
+
+        i::before
+        {
+            left: 0%;
+            transform: translateX(-50%) rotate(45deg);
+           
+        }
+    }
+
+    &:before
+    {
+        content:'';
+        position: absolute;
+        inset: 2px;
+        background-color: #27282c;   
+    }
+
+    span
+    {
+        position: relative;
+        z-index: 10; 
+    }
+
+    i
+    {
+      position:absolute;
+      inset:0;
+      display:block;
+
+      &::before
+      {
+        content: '';
+        position: absolute;
+        top:-6px;
+        left: 100%;
+        width: 10px;
+        height: 10px;
+        background-color: #27282c;
+        border: 1px solid var(--clr);
+
+        transform: translateX(-50%);
+        transition: .5s;
+      }
+
+
+    }
+
+}
+
+
+
