@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+ul li .fa-brands {
+  font-size: 3em;
+  -webkit-text-stroke: 2px var(--clr);
+  color: transparent;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid var(--clr);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  font-family: fontawesome;
+  text-align: center;
+  line-height: 120px;
+  font-size: 3em;
+  color: var(--clr);
+}
+
+ul li:hover::before {
+  height: 100%;
+}
+
+ul li:nth-child(1)::before {
+  content: '\f395';
+}
+
+ul li:nth-child(2)::before {
+  content: '\f420';
+}
+
+ul li:nth-child(3)::before {
+  content: '\f841';
+}
+
+ul li:nth-child(4)::before {
+  content: '\f3d3';
+}
+/*# sourceMappingURL=p11.css.map */
